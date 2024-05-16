@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Kameron:wght@400..700&display=swap');
+
+:root {
+    --cor-fundo: #6C8C94;
+    --cor-primaria: #f2f2f2;
+    --cor-secundaria: #D6D6CC;
+    --cor-botao: #0b0b0b;
+    --cor-sombra: #b2adad;
+    --cor-marvel: #A91D3A;
+
+    --fonte-primaria: 'Kameron', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-fundo);
+    color: var(--cor-primaria);
+}
+
+#cabecalho {
+    padding: 1.5% 0% 2% 15%;
+    animation: fade-down 0.5s;
+    background: var(--cor-primaria);
+    filter: drop-shadow(var(--cor-botao) 0px 4px 3px);
+}
+
+.cabecalho-menu {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+
+.cabecalho-menu-link {
+    font-family: var(--fonte-primaria);
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-flex;
+    color: var(--cor-botao);
+    filter: drop-shadow(var(--cor-sombra)  0px 1px 1px);
+}
+
+.cabecalho-menu-link:hover {
+    color: var(--cor-marvel);
+}
+
+.logo {
+    display: flex;
+    font-size: 48px;
+    font-weight: 700;
+    background: var(--cor-marvel);
+    padding-inline: 20px;
+    padding-block: 5px;
+    filter: drop-shadow(var(--cor-sombra) 0px 7px 5px);
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+#background {
+    width: 100%;
+    opacity: 70%;
+}
+
+.legenda {
+    position: absolute;
+    left: 20%;
+    bottom: 30%;
+    font-size: 200px;
+    font-weight: 700;
+    filter: drop-shadow(var(--cor-sombra) 0px 5px 1px);
+}
